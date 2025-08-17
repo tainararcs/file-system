@@ -4,8 +4,6 @@
    junto com um gerenciador de memória utilizando paginação lógica e física. 
    
    Ao final da execução, é gerado um relatório detalhado com métricas de desempenho.
-
-   Aluna: Tainara Souza.
 */
 
 #include <stdio.h>
@@ -140,7 +138,7 @@ typedef struct {
    int totalPages;                               // Quantidade total de páginas utilizadas na tarefa.
    int usedCodePages;                            // Quantidade de páginas usadas para código.
    int usedDataPages;                            // Quantidade de páginas usadas para dados.                           
-   AddressRange pagesTable[MAX_TASK_PAGES];  // Mapeamento de páginas de lógicas e físicas com seus respectivos endereços.
+   AddressRange pagesTable[MAX_TASK_PAGES];      // Mapeamento de páginas de lógicas e físicas com seus respectivos endereços.
 } MemoryTask;
 
 typedef struct {
